@@ -53,6 +53,7 @@ table {
     --color-base-text: rgb(18, 18, 18);
     --color-btn-bg: #5aa6c4;
     --bg-shadow:0 10px 20px -2px rgb(22, 22, 22);
+    --color: #000;
   }
 
 :root.dark {
@@ -60,7 +61,8 @@ table {
     --color-base-bg: rgb(18, 18, 18);
     --color-base-text: rgb(240, 240, 240);
     --color-btn-bg: rgb(36, 36, 36);
-    --bg-shadow:0 10px 20px -2px rgb(22, 22, 22);
+    --bg-shadow:0 10px 20px -2px rgb(22, 22, 22); 
+    --color: white;
   }
   
 
@@ -144,8 +146,6 @@ h2{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    
-
 }
 
 .left{
@@ -173,7 +173,7 @@ h2{
     gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: var(--color-base-text);
+    color: var(--color);
 }
 
 .input{
@@ -195,6 +195,7 @@ input{
     background-color: var(--color-base-bg);
     border: 1px solid rgb(77, 77, 77);
     border-radius: 3px;
+    color: var(--color);
 }
 
 input:focus{
