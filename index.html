@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up-Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="picture">
+            <div class="logo">
+                <img src="./attachment_70694540.jpeg" alt="logo" class="img-logo">
+                <h2 class="open">Open</h2>
+            </div>
+        </div>
+        <div class="right">
+            <div class="dummy-text left">
+                <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!</p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <p class="remote-text">You <em>know</em> you want to.</p>
+            </div>
+        
+            <form action="#">
+                <div class="form left">
+                    <p class="form-title">Let's do this!</p>
+                    <div class="input">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first-name" id="first-name" required placeholder=" ">
+                        <span></span>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="last-name">Last name</label>
+                        <input type="text" name="last-name" id="last-name">
+                        <span></span>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required placeholder=" ">
+                        <span></span>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="phone-number">Phone number</label>
+                        <input type="text" name="phone-number" id="phone-number" minlength="9" maxlength="9">
+                        <span></span>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="passwor" id="passwor" required placeholder=" ">
+                        <div class="requirements">
+      Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+    </div>
+                        <span></span>
+
+                    </div>
+                    
+                    <div class="input">
+                        <label for="confirm-password">Confirm password</label>
+                        <input type="text" name="confirm-password" id="confirm-password" required placeholder=" ">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="left button"><button id ="btn" type="submit">Create Account</button></div>
+            </form>
+            <div class="log-in left"><p>Already have an account?</p><a href="#">Log in</a></div>
+            <div class="theme">
+             <p class="theme-title">You are now on the <span class='theme-name'>dark</span> theme!</p>
+             <button class="theme-toggle">🌓 Toggle Theme 🌓</button>
+             </div>
+        </div>
+        
+</div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
