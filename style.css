@@ -47,6 +47,15 @@ table {
 	border-spacing: 0;
 }
 
+:root {
+    --border-btn: 1px solid rgb(220, 220, 220);
+    --color-base-bg: rgb(18, 18, 18);
+    --color-base-text: rgb(240, 240, 240);
+    --color-btn-bg: rgb(36, 36, 36);
+    --bg-shadow: 16px 7px 20px -2px white; 
+    --color: white;
+  }
+
 :root.light {
     --border-btn: 1px solid rgb(36, 36, 36);
     --color-base-bg: rgb(240, 240, 240);
@@ -56,15 +65,7 @@ table {
     --color: #000;
   }
 
-:root.dark {
-    --border-btn: 1px solid rgb(220, 220, 220);
-    --color-base-bg: rgb(18, 18, 18);
-    --color-base-text: rgb(240, 240, 240);
-    --color-btn-bg: rgb(36, 36, 36);
-    --bg-shadow:0 10px 20px -2px rgb(22, 22, 22); 
-    --color: white;
-  }
-  
+
 
 
 *{
@@ -169,15 +170,15 @@ h2{
 /* form */
 .form{
     background-color: var(--color-base-bg);
-    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+    box-shadow: var(--bg-shadow);
     display: flex;
     flex-flow: row wrap;
     gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: var(--color);
+    color: var(--color-base-text);
    font-family: 'Yanone Kaffeesatz', sans-serif;
-   font-size:1.3rem;
+   font-size:1.7rem;
 }
 
 .input{
@@ -194,12 +195,7 @@ h2{
     font-weight: 500;
 }
 
-input{
-    background-color: var(--color-base-bg);
-    border: 1px solid rgb(77, 77, 77);
-    border-radius: 3px;
-    color: var(--color);
-}
+
 
 input:focus{
 
@@ -225,7 +221,7 @@ input:invalid {
         top: -46px;
         right: 0px;
       }
-
+      
 
       
 
@@ -238,13 +234,15 @@ button{
     border-radius: 5px;
     padding: 10px 40px;
     margin: 40px 0;
+    width: 20vw;
+    max-width: 250px;
 }
 
 button:hover{
     background-color: #0c88c2;
     color: black;
-    
 }
+
 
 .log-in{
     display: flex;
@@ -264,7 +262,7 @@ a:hover{
 
 .theme{
     text-align: left;
-    margin: 
+    margin-top: 2vh; 
 }
 .theme-title{
     color: var(--color-base-text);
@@ -275,14 +273,15 @@ a:hover{
 .theme-toggle:hover {
   cursor: pointer;
 }
-
 .theme-toggle:focus {
   outline: var(--border-btn);
 }
 
+
 .theme-toggle{
     margin-left: 3vw;
     margin-top: 2rem;
+    
 }
 
 .theme-name{
@@ -298,7 +297,7 @@ a:hover{
     font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 800px)  {
     .content{
         flex-flow: column;
         height: auto;
@@ -348,10 +347,16 @@ a:hover{
         height: 1.5rem;
         width: 70vw;
     }
+    .requirements{
+        width: 70vw;
+        padding-top: 10px;
+    }
     .button,
+    .theme,
     .log-in{
         display: flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         margin-bottom: 0px;
     }
     button{
@@ -359,3 +364,22 @@ a:hover{
         width: 60vw;
         padding: 10px 5px;
     }   
+    
+    
+      input + span {
+        position: relative;
+      }
+
+    input:required + span::after {
+        font-size: 1rem;
+        position: absolute;
+        content: "required";
+        color: black;
+        background-color: red;
+        padding: 5px 10px;
+        top: -51px;
+        right: -10rem;      
+        
+    }
+
+}
