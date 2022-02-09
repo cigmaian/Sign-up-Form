@@ -209,6 +209,7 @@ input:invalid {
 
       input + span {
         position: relative;
+        margin-top: 13px;
       }
 
       input:required + span::after {
@@ -218,7 +219,7 @@ input:invalid {
         color: var(--color-base-text);
         background-color: red;
         padding: 5px 10px;
-        top: -46px;
+        top: -58px;
         right: 0px;
       }
       
@@ -368,6 +369,7 @@ a:hover{
     
       input + span {
         position: relative;
+        margin-top: 10px;
       }
 
     input:required + span::after {
@@ -377,7 +379,7 @@ a:hover{
         color: black;
         background-color: red;
         padding: 5px 10px;
-        top: -51px;
+        top: -61px;
         right: -10rem;      
         
     }
