@@ -213,13 +213,13 @@ input:invalid {
       }
 
       input:required + span::after {
-        font-size: 0.7rem;
+        font-size: 1rem;
         position: absolute;
         content: "required";
-        color: var(--color-base-text);
+        color: #000;
         background-color: red;
         padding: 5px 10px;
-        top: -58px;
+        top: -64px;
         right: 0px;
       }
       
