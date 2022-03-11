@@ -4,6 +4,6 @@ A singup form built using HTML/CSS/JS. Live version of the game is __[here](http
 
 ## Features
 
-- Dark mode
-- Hover effect on logo, buttons and log in
+- Dark mode.
+- Hover effect on logo, buttons and log in.
  
